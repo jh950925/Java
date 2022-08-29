@@ -55,9 +55,25 @@
 		int year = 2014;
 		final int MAX_VALUE = 100;
 		//리터럴 : 2014, 100
-		
+////////////////////////////////////////////////////////////////////////////////////////////
+[형식화된 출력]
+	println은 변수 값을 그대로 출력하므로
+	printf()를 사용해야 정수를 16진수나 8진수로 출력할 수 있다.
+	
+	%b			: boolean형식  
+	%d			: 10진 형식
+	%o			: 8진 형식
+	%x, %X		: 16진 형식
+////////////////////////////////////////////////////////////////////////////////////////////
+[화면에서 입력받기 - Scanner]
+	Scanner를 사용하기 위해서는 import java.util.*;를 해줘야 한다.
+	Scanner 변수명 = new Scanner(System.in); 객체를 생성해주고
+	
+	String input = scanner.nextLine();	//입력받은 내용을 in에 저장
+	int num = Integer.parseInt(input);	//입력받은 내용을 input 값으로 변환
 
-
+	만약 정수를 받아오고 싶다면
+	int num = scanner.nextInt();
 
 
 
